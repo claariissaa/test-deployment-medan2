@@ -1,0 +1,106 @@
+/* About */
+* body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* p {
+  text-align: justify;
+  margin-bottom: 20px;
+} */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-img {
+flex: 1;
+margin: 20px;
+border-radius: 10px; /* Ubah angka sesuai dengan keinginan Anda */
+overflow: hidden; /* Menyembunyikan gambar yang melampaui batas radius */
+border: 5px solid #f8f9fa; /* Warna dan ketebalan bingkai */
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-content {
+  flex: 1;
+  margin: 20px;
+}
+
+/* Ameribite */
+.ameribite {
+background: linear-gradient(to right, #ff0000, #f73690, #ff8000, #a57f01);
+-webkit-background-clip: text;
+background-clip: text;
+margin-bottom: 0px;
+color: transparent;
+font-weight: bold;
+}
+
+
+/* Footer */
+.site-footer
+{
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+@media (max-width:767px)
+{
+.social-icons li.title
+{
+  display:block;
+  margin-right:0;
+  font-weight:600
+}
+}

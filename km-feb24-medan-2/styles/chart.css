@@ -1,0 +1,102 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* CSS untuk header tabel */
+th {
+  background-color: #f2f2f2;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* CSS untuk sel-sel data */
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* CSS untuk baris genap */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* CSS untuk baris saat dihover */
+tr:hover {
+  background-color: #ddd;
+}
+
+#charts-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  */
+
+canvas {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scorecards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 0 18%; /* Atur lebar card agar 5 card muat dalam satu baris */
+  margin-bottom: 20px; /* Jarak antara card */
+}
+
+@media (max-width: 1200px) {
+  .card {
+    flex: 0 0 22%; /* Sesuaikan lebar card untuk layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    flex: 0 0 30%; /* Sesuaikan lebar card untuk layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 45%; /* Sesuaikan lebar card untuk layar yang lebih kecil */
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    flex: 0 0 100%; /* Sesuaikan lebar card untuk layar yang sangat kecil */
+  }
+}
