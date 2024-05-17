@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=visualization&v=weekly"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link rel="stylesheet" href="../styles/member.css" />
+    <link rel="stylesheet" href="../styles/materi.css" />
+    <title>Home | AmeriBite</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
+          <img src="../images/logo/vending.png" alt="AmeriBite Logo" height="60" style="margin-right: 10px;">
+          <span style="font-size: 1.5rem;" class="ameribite">AmeriBite</span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../views/dashboard.html" style="font-weight: bold;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../views/chart.html" style="font-weight: bold;">Dashboard</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- About -->
+    <div class="container">
+      <h2 style="text-align: center;"><strong>About Us</strong></h2>
+      <div class="about-section">
+        <div class="about-img">
+          <img src="../images/logo/content.jpg" alt="About Us">
+        </div>
+        <div class="about-content">
+          <em>
+          <p style="text-align: justify;">AmeriBite is a prominent vending machine business operating in America, with its machines strategically placed in high-traffic locations such as Gutten Plans, EB Public Library, Brunswick Sq Mall, and Earle Asphalt. This innovative venture offers a wide array of products, neatly categorized into Food, Carbonated drinks, Non-Carbonated drinks, and Water, ensuring that customers can easily find what they need. AmeriBite's presence in these key locations provides convenience and accessibility to customers on the go, making it a go-to option for quick and satisfying snacks and beverages.</p>
+          <p style="text-align: justify;">Through its commitment to quality and convenience, AmeriBite aims to enhance the vending machine experience for customers across America. By offering a diverse range of products in carefully selected locations, AmeriBite strives to meet the needs of its customers, providing them with a convenient and reliable source of snacks and beverages. With its focus on customer satisfaction and accessibility, AmeriBite continues to be a leading choice in the vending machine industry, setting a high standard for quality and service.</p>
+          </em>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Member -->
+    <div class="container">
+      <h2 style="text-align: center; padding: 20px;"><strong>Meet Our Team</strong></h2>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/member/zaka.jpg" class="d-block w-100" alt="Zakaria" width="450" height="515">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Zakaria Priyo Utomo</h5>
+              <p>Project Leader Data Analysis & Software Engineering</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Danendra">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Danendra Abiyyu Alif</h5>
+              <p>Data Analyst & Front End</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Aidah">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Astikhatul Mufaidah</h5>
+              <p>Data Cleaning & Front End</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Juliana">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Juliana Oktaviani Enok</h5>
+              <p>Data Analyst & Front End</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Joel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Joel Parsaoran Sihombing</h5>
+              <p>Data Visualization & Front End</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Clarissa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Clarissa Savira Madayanto</h5>
+              <p>Data Cleaning & Deployment Team</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Angel">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Angelika Rovita</h5>
+              <p>Data Visualization & Quality Assurance</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Kesha">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Muhammad Kesha Mauluddy Rachman</h5>
+              <p>Data Cleaning & Quality Assurance</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Anisa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Anisa Septariani</h5>
+              <p>Data Communication & Quality Assurance</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Iman">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Iman Kurnia</h5>
+              <p>Data Visualization & Pitch Deck</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Arizqi">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Arizqi Febrianti</h5>
+              <p>Data Visualization & Pitch Deck</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Nadia">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nadia Jayanti Br Situmorang</h5>
+              <p>Data Visualization & Pitch Deck</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../images/member/member 1.jpg" class="d-block w-100" alt="Zulfa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Zulfa Luthfiah Fauzi</h5>
+              <p>Data Analyst & Pitch Deck</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MATERI -->
+    <h2 style="text-align: center; padding: 20px;"><strong>Material Used</strong></h2>
+    <div class="card-container">
+      <!-- Materi 1 -->
+      <div class="card">
+        <img src="../images/materi/data-cleaning.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Data Cleaning</strong></h5>
+          <p class="card-text">Data cleaning is the stage where we correct or remove errors, inconsistencies, and inaccuracies contained in the dataset.</p>
+        </div>
+        <div class="card-body">
+          <a href="https://revou.co/kosakata/data-cleaning" class="card-link">More</a>
+        </div>
+      </div>
+    
+      <!-- Materi 2 -->
+      <div class="card">
+        <img src="../images/materi/data-analytics.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Data Analytics</strong></h5>
+          <p class="card-text">Data analyst is a job profession whose job is to read and analyze existing data from the company in order to sustain the company. In the era of digitalization like now, professions related to data processing are very mushrooming and are needed by companies. besides data analysts there are also data engineers, data scientists, etc.</p>
+        </div>
+        <div class="card-body">
+          <a href="https://revou.co/kosakata/eda" class="card-link">More</a>
+        </div>
+      </div>
+    
+      <!-- Materi 3 -->
+      <div class="card">
+        <img src="../images/materi/data-visualization.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Data Visualization</strong></h5>
+          <p class="card-text">Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data. This can help users to make more informed decisions based on the insights derived from the visual representations of the data.</p>
+        </div>
+        <div class="card-body">
+          <a href="https://revou.co/kosakata/looker-studio" class="card-link">More</a>
+        </div>
+      </div>
+    
+      <!-- Materi 4 -->
+      <div class="card">
+        <img src="../images/materi/communications.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Data Communication</strong></h5>
+          <p class="card-text">Data communication in the context of making PPT (presentation) on the preparation of material that explains the process in Data Analytics.</p>
+        </div>
+        <div class="card-body">
+          <a href="https://revou.co/kosakata/data-storytelling" class="card-link">More</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Maps -->
+  <div id="googleMap" style="width: 100%; height: 400px;"></div>
+  <script>
+    function initializeMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(-7.769364345265296, 110.40184244602135), // Ganti dengan koordinat lokasi
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initializeMap);
+  </script>
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <a href="https://www.revo-u.com/">
+                  <img src="../images/logo/revou.png" alt="RevoU" style="width: 30%;">
+                </a>                
+              </div>
+              <div class="col-md-4">
+                <a href="https://kampusmerdeka.kemdikbud.go.id/">
+                  <img src="../images/logo/kampus-merdeka.png" alt="Kampus Merdeka" style="width: 60%;">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <p class="copyright-text" style="text-align: left;">Copyright &copy; 2024 AmeriBite. All Rights Reserved. Designed by Section Medan Team 2</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/search.js"></script>
+  </body>
+</html>
